@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18435FF72A82B73900116117 /* Home_RemodelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18435FF62A82B73900116117 /* Home_RemodelApp.swift */; };
-		18435FF92A82B73900116117 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18435FF82A82B73900116117 /* ContentView.swift */; };
 		18435FFB2A82B73B00116117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18435FFA2A82B73B00116117 /* Assets.xcassets */; };
 		18435FFE2A82B73B00116117 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18435FFD2A82B73B00116117 /* Preview Assets.xcassets */; };
 		184360002A82B73B00116117 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18435FFF2A82B73B00116117 /* Persistence.swift */; };
@@ -16,6 +14,32 @@
 		1843600D2A82B73B00116117 /* Home_RemodelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843600C2A82B73B00116117 /* Home_RemodelTests.swift */; };
 		184360172A82B73B00116117 /* Home_RemodelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184360162A82B73B00116117 /* Home_RemodelUITests.swift */; };
 		184360192A82B73B00116117 /* Home_RemodelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184360182A82B73B00116117 /* Home_RemodelUITestsLaunchTests.swift */; };
+		1843602F2A82BA4D00116117 /* HomeRemodelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843602E2A82BA4D00116117 /* HomeRemodelApp.swift */; };
+		184360302A82BA4D00116117 /* HomeRemodelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843602E2A82BA4D00116117 /* HomeRemodelApp.swift */; };
+		184360312A82BA4D00116117 /* HomeRemodelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843602E2A82BA4D00116117 /* HomeRemodelApp.swift */; };
+		184360332A82BAC500116117 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184360322A82BAC500116117 /* InputView.swift */; };
+		184360342A82BAC500116117 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184360322A82BAC500116117 /* InputView.swift */; };
+		184360352A82BAC500116117 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184360322A82BAC500116117 /* InputView.swift */; };
+		184360372A82BACD00116117 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184360362A82BACD00116117 /* SettingsRowView.swift */; };
+		184360382A82BACD00116117 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184360362A82BACD00116117 /* SettingsRowView.swift */; };
+		184360392A82BACD00116117 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184360362A82BACD00116117 /* SettingsRowView.swift */; };
+		1843603B2A82BAE300116117 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843603A2A82BAE300116117 /* LoginView.swift */; };
+		1843603C2A82BAE300116117 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843603A2A82BAE300116117 /* LoginView.swift */; };
+		1843603D2A82BAE300116117 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843603A2A82BAE300116117 /* LoginView.swift */; };
+		1843603F2A82BAE800116117 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843603E2A82BAE800116117 /* RegistrationView.swift */; };
+		184360402A82BAE800116117 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843603E2A82BAE800116117 /* RegistrationView.swift */; };
+		184360412A82BAE800116117 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843603E2A82BAE800116117 /* RegistrationView.swift */; };
+		184360432A82BAEF00116117 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184360422A82BAEF00116117 /* ProfileView.swift */; };
+		184360442A82BAEF00116117 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184360422A82BAEF00116117 /* ProfileView.swift */; };
+		184360452A82BAEF00116117 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184360422A82BAEF00116117 /* ProfileView.swift */; };
+		184360472A82BAF700116117 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184360462A82BAF700116117 /* ContentView.swift */; };
+		184360482A82BAF700116117 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184360462A82BAF700116117 /* ContentView.swift */; };
+		184360492A82BAF700116117 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184360462A82BAF700116117 /* ContentView.swift */; };
+		1843604B2A82BAFE00116117 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843604A2A82BAFE00116117 /* User.swift */; };
+		1843604C2A82BAFE00116117 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843604A2A82BAFE00116117 /* User.swift */; };
+		1843604D2A82BAFE00116117 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843604A2A82BAFE00116117 /* User.swift */; };
+		184360502A82BC2B00116117 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1843604E2A82BC2B00116117 /* PlayfairDisplay-Regular.ttf */; };
+		184360512A82BC2B00116117 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1843604F2A82BC2B00116117 /* PlayfairDisplay-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +61,6 @@
 
 /* Begin PBXFileReference section */
 		18435FF32A82B73900116117 /* Home-Remodel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home-Remodel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		18435FF62A82B73900116117 /* Home_RemodelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_RemodelApp.swift; sourceTree = "<group>"; };
-		18435FF82A82B73900116117 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18435FFA2A82B73B00116117 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18435FFD2A82B73B00116117 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18435FFF2A82B73B00116117 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +70,16 @@
 		184360122A82B73B00116117 /* Home-RemodelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Home-RemodelUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		184360162A82B73B00116117 /* Home_RemodelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_RemodelUITests.swift; sourceTree = "<group>"; };
 		184360182A82B73B00116117 /* Home_RemodelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_RemodelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1843602E2A82BA4D00116117 /* HomeRemodelApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRemodelApp.swift; sourceTree = "<group>"; };
+		184360322A82BAC500116117 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		184360362A82BACD00116117 /* SettingsRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		1843603A2A82BAE300116117 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1843603E2A82BAE800116117 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		184360422A82BAEF00116117 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		184360462A82BAF700116117 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1843604A2A82BAFE00116117 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1843604E2A82BC2B00116117 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		1843604F2A82BC2B00116117 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +130,11 @@
 		18435FF52A82B73900116117 /* Home-Remodel */ = {
 			isa = PBXGroup;
 			children = (
-				18435FF62A82B73900116117 /* Home_RemodelApp.swift */,
-				18435FF82A82B73900116117 /* ContentView.swift */,
+				1843602D2A82B9A600116117 /* App */,
+				184360282A82B8A200116117 /* Components */,
+				184360292A82B8B900116117 /* Core */,
+				184360262A82B87F00116117 /* Model */,
+				184360252A82B84F00116117 /* Fonts */,
 				18435FFA2A82B73B00116117 /* Assets.xcassets */,
 				18435FFF2A82B73B00116117 /* Persistence.swift */,
 				184360012A82B73B00116117 /* Home_Remodel.xcdatamodeld */,
@@ -131,6 +166,75 @@
 				184360182A82B73B00116117 /* Home_RemodelUITestsLaunchTests.swift */,
 			);
 			path = "Home-RemodelUITests";
+			sourceTree = "<group>";
+		};
+		184360252A82B84F00116117 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1843604F2A82BC2B00116117 /* PlayfairDisplay-Bold.ttf */,
+				1843604E2A82BC2B00116117 /* PlayfairDisplay-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		184360262A82B87F00116117 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1843604A2A82BAFE00116117 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		184360282A82B8A200116117 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				184360322A82BAC500116117 /* InputView.swift */,
+				184360362A82BACD00116117 /* SettingsRowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		184360292A82B8B900116117 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1843602A2A82B8BB00116117 /* Authentication */,
+				1843602B2A82B91300116117 /* Profile */,
+				1843602C2A82B92800116117 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1843602A2A82B8BB00116117 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				1843603A2A82BAE300116117 /* LoginView.swift */,
+				1843603E2A82BAE800116117 /* RegistrationView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		1843602B2A82B91300116117 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				184360422A82BAEF00116117 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1843602C2A82B92800116117 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				184360462A82BAF700116117 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		1843602D2A82B9A600116117 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1843602E2A82BA4D00116117 /* HomeRemodelApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +341,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184360512A82BC2B00116117 /* PlayfairDisplay-Bold.ttf in Resources */,
 				18435FFE2A82B73B00116117 /* Preview Assets.xcassets in Resources */,
 				18435FFB2A82B73B00116117 /* Assets.xcassets in Resources */,
+				184360502A82BC2B00116117 /* PlayfairDisplay-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +369,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184360432A82BAEF00116117 /* ProfileView.swift in Sources */,
+				1843603B2A82BAE300116117 /* LoginView.swift in Sources */,
+				1843602F2A82BA4D00116117 /* HomeRemodelApp.swift in Sources */,
+				184360332A82BAC500116117 /* InputView.swift in Sources */,
+				1843603F2A82BAE800116117 /* RegistrationView.swift in Sources */,
+				184360472A82BAF700116117 /* ContentView.swift in Sources */,
+				184360372A82BACD00116117 /* SettingsRowView.swift in Sources */,
 				184360002A82B73B00116117 /* Persistence.swift in Sources */,
+				1843604B2A82BAFE00116117 /* User.swift in Sources */,
 				184360032A82B73B00116117 /* Home_Remodel.xcdatamodeld in Sources */,
-				18435FF92A82B73900116117 /* ContentView.swift in Sources */,
-				18435FF72A82B73900116117 /* Home_RemodelApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +386,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184360382A82BACD00116117 /* SettingsRowView.swift in Sources */,
+				184360342A82BAC500116117 /* InputView.swift in Sources */,
+				184360482A82BAF700116117 /* ContentView.swift in Sources */,
 				1843600D2A82B73B00116117 /* Home_RemodelTests.swift in Sources */,
+				184360402A82BAE800116117 /* RegistrationView.swift in Sources */,
+				1843604C2A82BAFE00116117 /* User.swift in Sources */,
+				1843603C2A82BAE300116117 /* LoginView.swift in Sources */,
+				184360442A82BAEF00116117 /* ProfileView.swift in Sources */,
+				184360302A82BA4D00116117 /* HomeRemodelApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +402,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184360452A82BAEF00116117 /* ProfileView.swift in Sources */,
+				1843603D2A82BAE300116117 /* LoginView.swift in Sources */,
+				184360312A82BA4D00116117 /* HomeRemodelApp.swift in Sources */,
+				184360352A82BAC500116117 /* InputView.swift in Sources */,
+				184360412A82BAE800116117 /* RegistrationView.swift in Sources */,
+				184360492A82BAF700116117 /* ContentView.swift in Sources */,
+				184360392A82BACD00116117 /* SettingsRowView.swift in Sources */,
 				184360192A82B73B00116117 /* Home_RemodelUITestsLaunchTests.swift in Sources */,
+				1843604D2A82BAFE00116117 /* User.swift in Sources */,
 				184360172A82B73B00116117 /* Home_RemodelUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
