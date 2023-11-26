@@ -145,6 +145,8 @@
 		181BC5722A86DEFE005703B0 /* ProductPage */ = {
 			isa = PBXGroup;
 			children = (
+				181BC5622A85DE4A005703B0 /* ProductListingView.swift */,
+				181BC5662A85E0C3005703B0 /* ProductDetailView.swift */,
 			);
 			path = ProductPage;
 			sourceTree = "<group>";
@@ -288,8 +290,6 @@
 			children = (
 				1843603A2A82BAE300116117 /* LoginView.swift */,
 				1843603E2A82BAE800116117 /* RegistrationView.swift */,
-				181BC5622A85DE4A005703B0 /* ProductListingView.swift */,
-				181BC5662A85E0C3005703B0 /* ProductDetailView.swift */,
 				181BC56E2A85F862005703B0 /* CheckoutView.swift */,
 			);
 			path = View;
@@ -374,7 +374,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					18435FF22A82B73900116117 = {
 						CreatedOnToolsVersion = 14.2;
@@ -561,6 +561,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -621,6 +622,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -661,7 +663,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aaryaneilnimbalkar.Home-Remodel";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aaryaneilnimbalkar.Home-Remodel1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -691,7 +693,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aaryaneilnimbalkar.Home-Remodel";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aaryaneilnimbalkar.Home-Remodel1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -822,7 +824,7 @@
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				minimumVersion = 10.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

@@ -46,13 +46,13 @@ struct ProductListingView: View {
                         ScrollView (.horizontal, showsIndicators: false) {
                             HStack (spacing: 0) {
                                 ForEach(0 ..< 4) { i in
-                                    //                                    NavigationLink(
-                                    //                                        destination: DetailScreen(),
-                                    //                                        label: {
-                                    //                                            ProductCardView(image: Image("chair_\(i+1)"), size: 210)
-                                    //                                        })
-                                    //                                        .navigationBarHidden(true)
-                                    //                                        .foregroundColor(.black)
+                                    NavigationLink(
+                                        destination: ProductDetailView(),
+                                        label: {
+                                            ProductCardView(image: Image("chair_\(i+1)"), size: 210)
+                                        })
+                                    .navigationBarHidden(true)
+                                    .foregroundColor(.black)
                                 }
                                 .padding(.leading)
                             }
@@ -81,9 +81,9 @@ struct ProductListingView: View {
                 }
             }
         }
-        //        .navigationBarTitle("") //this must be empty
-        //        .navigationBarHidden(true)
-        //        .navigationBarBackButtonHidden(true)
+//                .navigationBarTitle("") //this must be empty
+//                .navigationBarHidden(true)
+//                .navigationBarBackButtonHidden(true)
     }
 }
 struct ProductListingView_Previews: PreviewProvider {
