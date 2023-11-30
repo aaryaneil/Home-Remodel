@@ -88,6 +88,7 @@ struct ColorDotView: View {
 
 struct DescriptionView: View {
     var body: some View {
+        @State var isHeartFilled = false
         VStack (alignment: .leading) {
             //                Title
             Text("Luruxy Swedia \nChair")
@@ -102,6 +103,12 @@ struct DescriptionView: View {
                     .opacity(0.5)
                     .padding(.leading, 8)
                 Spacer()
+                Button(action: {
+                                    isHeartFilled.toggle()
+                                }) {
+                                    Image(systemName: isHeartFilled ? "heart.fill" : "heart")
+                                        .foregroundColor(isHeartFilled ? .red : .gray)
+                                }
             }
             
             Text("Description")
