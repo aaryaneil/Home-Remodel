@@ -68,11 +68,11 @@
 		18EC50942A82D3A4008BDEC9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC50932A82D3A4008BDEC9 /* AuthViewModel.swift */; };
 		18EC50952A82D3A4008BDEC9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC50932A82D3A4008BDEC9 /* AuthViewModel.swift */; };
 		18EC50962A82D3A4008BDEC9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC50932A82D3A4008BDEC9 /* AuthViewModel.swift */; };
+		EC0821552B197E4C0056CE85 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0821542B197E4C0056CE85 /* QuoteView.swift */; };
 		EC2817C62B1960E6003F16E7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2817C52B1960E5003F16E7 /* Launch Screen.storyboard */; };
 		EC2817D62B196860003F16E7 /* New Group in Resources */ = {isa = PBXBuildFile; fileRef = EC2817D52B196860003F16E7 /* New Group */; };
 		EC2817D82B196F3E003F16E7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2817D72B196F3D003F16E7 /* WelcomeView.swift */; };
 		EC2817DA2B196F88003F16E7 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2817D92B196F88003F16E7 /* RoundButton.swift */; };
-		EC2817DC2B197179003F16E7 /* New Group in Resources */ = {isa = PBXBuildFile; fileRef = EC2817DB2B197179003F16E7 /* New Group */; };
 		EC2817DE2B1972CC003F16E7 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2817DD2B1972CC003F16E7 /* UIExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -125,11 +125,11 @@
 		18BE31B42B18B9C100F6CB07 /* BottomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavBar.swift; sourceTree = "<group>"; };
 		18EC50932A82D3A4008BDEC9 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		18EC50972A8358D4008BDEC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EC0821542B197E4C0056CE85 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		EC2817C52B1960E5003F16E7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../../../../../Desktop/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		EC2817D52B196860003F16E7 /* New Group */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "New Group"; sourceTree = "<group>"; };
 		EC2817D72B196F3D003F16E7 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		EC2817D92B196F88003F16E7 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
-		EC2817DB2B197179003F16E7 /* New Group */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "New Group"; path = "../../../../../Desktop/New Group"; sourceTree = "<group>"; };
 		EC2817DD2B1972CC003F16E7 /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -294,7 +294,6 @@
 			isa = PBXGroup;
 			children = (
 				EC2817DD2B1972CC003F16E7 /* UIExtension.swift */,
-				EC2817DB2B197179003F16E7 /* New Group */,
 				EC2817D92B196F88003F16E7 /* RoundButton.swift */,
 				EC2817D72B196F3D003F16E7 /* WelcomeView.swift */,
 				EC2817D52B196860003F16E7 /* New Group */,
@@ -332,6 +331,7 @@
 		187A80D72B18CB6D00EA8E75 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EC0821532B197E3A0056CE85 /* Quote View */,
 				187A80DE2B18DA3800EA8E75 /* Favorites */,
 				187A80DC2B18D8D800EA8E75 /* Cart */,
 				1843602B2A82B91300116117 /* Profile */,
@@ -397,6 +397,14 @@
 				18BE31B42B18B9C100F6CB07 /* BottomNavBar.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EC0821532B197E3A0056CE85 /* Quote View */ = {
+			isa = PBXGroup;
+			children = (
+				EC0821542B197E4C0056CE85 /* QuoteView.swift */,
+			);
+			path = "Quote View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,7 +523,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC2817DC2B197179003F16E7 /* New Group in Resources */,
 				184360512A82BC2B00116117 /* PlayfairDisplay-Bold.ttf in Resources */,
 				18435FFE2A82B73B00116117 /* Preview Assets.xcassets in Resources */,
 				184360532A82CE4400116117 /* GoogleService-Info.plist in Resources */,
@@ -555,6 +562,7 @@
 				181BC56F2A85F862005703B0 /* CheckoutView.swift in Sources */,
 				1843603B2A82BAE300116117 /* LoginView.swift in Sources */,
 				1843602F2A82BA4D00116117 /* HomeRemodelApp.swift in Sources */,
+				EC0821552B197E4C0056CE85 /* QuoteView.swift in Sources */,
 				18AE0A1D2A83606E004DA0D2 /* HomeScreenView.swift in Sources */,
 				184360332A82BAC500116117 /* InputView.swift in Sources */,
 				1843603F2A82BAE800116117 /* RegistrationView.swift in Sources */,
@@ -757,7 +765,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Home-Remodel/Preview Content\"";
-				DEVELOPMENT_TEAM = UUB543U8W9;
+				DEVELOPMENT_TEAM = 38RN2A868L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Home-Remodel/Info.plist";
@@ -788,7 +796,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Home-Remodel/Preview Content\"";
-				DEVELOPMENT_TEAM = UUB543U8W9;
+				DEVELOPMENT_TEAM = 38RN2A868L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Home-Remodel/Info.plist";

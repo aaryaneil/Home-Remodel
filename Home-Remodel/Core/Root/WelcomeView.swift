@@ -6,6 +6,7 @@
 
 import SwiftUI
 
+
 struct WelcomeView: View {
     var body: some View {
         ZStack{
@@ -17,12 +18,6 @@ struct WelcomeView: View {
             VStack{
                 Spacer()
                 
-               // Image("app_logo")
-                    //.resizable()
-                  //  .scaledToFit()
-                  //  .frame(width: 50, height: 60)
-                  //  .padding(.bottom, 8)
-                
                 Text( "Welcome\nto our store")
                     .font(.customfont(.semibold, fontSize: 48))
                     .foregroundColor(.white)
@@ -33,29 +28,28 @@ struct WelcomeView: View {
                     .foregroundColor(.white.opacity(0.7))
                     .multilineTextAlignment(.center)
                     .padding(.bottom, 30)
-                
-                NavigationLink {
-                    LoginView()
-                } label: {
-                    RoundButton(title: "Get Started") {
-                    }
-                }
 
-               
-                
+                NavigationLink(destination: LoginView()) {
+                                    Text("Login")
+                        .font(.customfont(.semibold, fontSize: 18))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60)
+                        .background(Color.primaryApp)
+                        .cornerRadius(20)
+                                }
+                                .buttonStyle(.bordered)
+
                 Spacer()
                     .frame(height: 80)
-                
             }
             .padding(.horizontal , 20)
         }
-        .navigationTitle("")
-        .navigationBarBackButtonHidden(true)
-        .navigationBarHidden(true)
+//        .navigationTitle("")
+//        .navigationBarBackButtonHidden(true)
+//        .navigationBarHidden(true)
         .ignoresSafeArea()
     }
-        
-    
 }
 
 struct WelcomeView_Previews: PreviewProvider {

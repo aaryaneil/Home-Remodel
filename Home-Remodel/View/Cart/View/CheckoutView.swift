@@ -1,8 +1,4 @@
-//
 import SwiftUI
-//extension Color {
-//static let backgroundColor = Color(red: 245/255, green: 245/255, blue: 245/255)
-//}
 
 struct CheckoutView: View {
     
@@ -14,37 +10,40 @@ struct CheckoutView: View {
     @State private var selectedDeliveryOption = 0
     let deliveryOptions = ["Standard Delivery", "Express Delivery", "In-store Pickup"]
     
-    
     let bgColor = Color("BackgroundColor")
-    let primaryColor = Color.blue
+    let primaryColor = Color("Primary")
     let secondaryColor = Color.gray.opacity(0.2)
     
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
-                HStack {
+                HStack(alignment: .top, spacing: 10) {
                     Image("productThumbnail")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 60, height: 60)
                         .background(secondaryColor)
                         .cornerRadius(10)
+                    
                     VStack(alignment: .leading) {
-                        Text("Product Name")
+                        Text("Product Name 1")
                             .font(.headline)
                         Text("Quantity: 1")
                         Text("$100.00")
                             .font(.title2)
                             .bold()
                     }
+                    Spacer()
                 }
-                HStack {
+                
+                HStack(alignment: .top, spacing: 10) {
                     Image("productThumbnail2")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 60, height: 60)
                         .background(secondaryColor)
                         .cornerRadius(10)
+                    
                     VStack(alignment: .leading) {
                         Text("Product Name 2")
                             .font(.headline)
@@ -53,14 +52,13 @@ struct CheckoutView: View {
                             .font(.title2)
                             .bold()
                     }
+                    Spacer()
                 }
-                
                 
                 TextField("Delivery Address", text: $deliveryAddress)
                     .padding()
                     .background(secondaryColor)
                     .cornerRadius(10)
-                
                 
                 VStack(alignment: .leading, spacing: 10) {
                     Text("Payment Information").font(.headline)
@@ -74,7 +72,6 @@ struct CheckoutView: View {
                 .background(secondaryColor)
                 .cornerRadius(10)
                 
-                
                 HStack {
                     Spacer()
                     VStack(alignment: .leading, spacing: 10) {
@@ -86,22 +83,19 @@ struct CheckoutView: View {
                     }
                 }
                 
-                
                 Picker("Delivery Options", selection: $selectedDeliveryOption) {
                     ForEach(deliveryOptions.indices, id: \.self) { index in
                         Text(deliveryOptions[index])
                     }
                 }.pickerStyle(SegmentedPickerStyle())
                 
-                
                 TextField("Enter Promo Code or Gift Card", text: $promoCode)
                     .padding()
                     .background(secondaryColor)
                     .cornerRadius(10)
                 
-                
                 Button(action: {
-                    
+                    // Handle checkout action
                 }) {
                     Text("Checkout")
                         .padding()
@@ -111,22 +105,21 @@ struct CheckoutView: View {
                         .cornerRadius(10)
                         .shadow(radius: 10)
                 }
+                .padding(.bottom, 20) // Add padding below the Checkout button
                 
-                
-                VStack(alignment: .leading, spacing: 10) {
+                VStack(alignment: .center, spacing: 10) {
                     Link("Return Policy", destination: URL(string: "https://yourwebsite.com/returnpolicy")!)
                         .foregroundColor(primaryColor)
-                    Link("Customer Support", destination: URL(string: "https://yourwebsite.com/support")!)
-                        .foregroundColor(primaryColor)
+                        .padding(.bottom, 10) // Add padding below Return Policy
                 }
-                
+                .frame(maxWidth: .infinity, alignment: .center) // Center Return Policy
             }
             .padding()
-            .padding()
-            //  .background(Color.backgroundColor)
             .cornerRadius(10)
+            .padding(.horizontal)
+            .background(bgColor)
         }
-        // .background(Color.backgroundColor.ignoresSafeArea())
+        .background(bgColor.ignoresSafeArea())
     }
 }
 
@@ -135,4 +128,3 @@ struct CheckoutView_Previews: PreviewProvider {
         CheckoutView()
     }
 }
-

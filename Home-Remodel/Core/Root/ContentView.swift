@@ -11,7 +11,7 @@ struct ContentView: View {
             if viewModel.userSession != nil {
                 ProductListingView()
             } else {
-              LoginView()
+                LoginView()
             }
         }
     }
