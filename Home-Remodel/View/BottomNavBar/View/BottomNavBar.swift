@@ -14,8 +14,11 @@ struct BottomNavBarView: View {
         //var camera = Image("camera.viewfinder").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
         HStack {
             BottomNavBarItem(image: Image("Home"), destination: {AnyView(ProductListingView())})
-            //BottomNavBarItem(image: Image("fav"),)
+//            BottomNavBarItem(image: Image("heart.fill"),)
+            
+            //Edit the code below to add navigation to the LiDAR view
             BottomNavBarItem(image: Image("camera.viewfinder"), destination: {AnyView(CheckoutView())})
+            
             BottomNavBarItem(image: Image("User"), destination: {AnyView(ProfileView())})
         }
         .padding()

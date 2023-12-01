@@ -2,6 +2,7 @@ import SwiftUI
 struct QuoteView: View {
     var body: some View {
         VStack {
+            Image("")//add image here
             Spacer()
             
             Text("Here is your real-time quote:")
