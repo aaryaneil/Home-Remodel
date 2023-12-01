@@ -70,6 +70,10 @@
 		18EC50962A82D3A4008BDEC9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC50932A82D3A4008BDEC9 /* AuthViewModel.swift */; };
 		EC2817C62B1960E6003F16E7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2817C52B1960E5003F16E7 /* Launch Screen.storyboard */; };
 		EC2817D62B196860003F16E7 /* New Group in Resources */ = {isa = PBXBuildFile; fileRef = EC2817D52B196860003F16E7 /* New Group */; };
+		EC2817D82B196F3E003F16E7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2817D72B196F3D003F16E7 /* WelcomeView.swift */; };
+		EC2817DA2B196F88003F16E7 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2817D92B196F88003F16E7 /* RoundButton.swift */; };
+		EC2817DC2B197179003F16E7 /* New Group in Resources */ = {isa = PBXBuildFile; fileRef = EC2817DB2B197179003F16E7 /* New Group */; };
+		EC2817DE2B1972CC003F16E7 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2817DD2B1972CC003F16E7 /* UIExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +127,10 @@
 		18EC50972A8358D4008BDEC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EC2817C52B1960E5003F16E7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../../../../../Desktop/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		EC2817D52B196860003F16E7 /* New Group */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "New Group"; sourceTree = "<group>"; };
+		EC2817D72B196F3D003F16E7 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		EC2817D92B196F88003F16E7 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		EC2817DB2B197179003F16E7 /* New Group */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "New Group"; path = "../../../../../Desktop/New Group"; sourceTree = "<group>"; };
+		EC2817DD2B1972CC003F16E7 /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +293,10 @@
 		1843602C2A82B92800116117 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				EC2817DD2B1972CC003F16E7 /* UIExtension.swift */,
+				EC2817DB2B197179003F16E7 /* New Group */,
+				EC2817D92B196F88003F16E7 /* RoundButton.swift */,
+				EC2817D72B196F3D003F16E7 /* WelcomeView.swift */,
 				EC2817D52B196860003F16E7 /* New Group */,
 				EC2817C52B1960E5003F16E7 /* Launch Screen.storyboard */,
 				184360462A82BAF700116117 /* ContentView.swift */,
@@ -503,6 +515,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2817DC2B197179003F16E7 /* New Group in Resources */,
 				184360512A82BC2B00116117 /* PlayfairDisplay-Bold.ttf in Resources */,
 				18435FFE2A82B73B00116117 /* Preview Assets.xcassets in Resources */,
 				184360532A82CE4400116117 /* GoogleService-Info.plist in Resources */,
@@ -545,12 +558,15 @@
 				18AE0A1D2A83606E004DA0D2 /* HomeScreenView.swift in Sources */,
 				184360332A82BAC500116117 /* InputView.swift in Sources */,
 				1843603F2A82BAE800116117 /* RegistrationView.swift in Sources */,
+				EC2817DE2B1972CC003F16E7 /* UIExtension.swift in Sources */,
+				EC2817DA2B196F88003F16E7 /* RoundButton.swift in Sources */,
 				184360472A82BAF700116117 /* ContentView.swift in Sources */,
 				187A80DB2B18D7FC00EA8E75 /* Product.swift in Sources */,
 				181BC5632A85DE4A005703B0 /* ProductListingView.swift in Sources */,
 				184360372A82BACD00116117 /* SettingsRowView.swift in Sources */,
 				183C1C822B190A0A003C345C /* ProductViewModel.swift in Sources */,
 				18EC50942A82D3A4008BDEC9 /* AuthViewModel.swift in Sources */,
+				EC2817D82B196F3E003F16E7 /* WelcomeView.swift in Sources */,
 				184360002A82B73B00116117 /* Persistence.swift in Sources */,
 				1843604B2A82BAFE00116117 /* User.swift in Sources */,
 				184360032A82B73B00116117 /* Home_Remodel.xcdatamodeld in Sources */,
