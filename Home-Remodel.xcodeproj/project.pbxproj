@@ -63,7 +63,6 @@
 		18AE0A1D2A83606E004DA0D2 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0A1C2A83606E004DA0D2 /* HomeScreenView.swift */; };
 		18AE0A1E2A83606E004DA0D2 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0A1C2A83606E004DA0D2 /* HomeScreenView.swift */; };
 		18AE0A1F2A83606E004DA0D2 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE0A1C2A83606E004DA0D2 /* HomeScreenView.swift */; };
-		18BE31A52B18A4CC00F6CB07 /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 18BE31A42B18A4CC00F6CB07 /* CountryPicker */; };
 		18BE31B52B18B9C100F6CB07 /* BottomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE31B42B18B9C100F6CB07 /* BottomNavBar.swift */; };
 		18EC50942A82D3A4008BDEC9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC50932A82D3A4008BDEC9 /* AuthViewModel.swift */; };
 		18EC50952A82D3A4008BDEC9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC50932A82D3A4008BDEC9 /* AuthViewModel.swift */; };
@@ -139,7 +138,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				184360582A82D0B700116117 /* FirebaseAppCheck in Frameworks */,
-				18BE31A52B18A4CC00F6CB07 /* CountryPicker in Frameworks */,
 				1843605A2A82D0B700116117 /* FirebaseAuth in Frameworks */,
 				1843605C2A82D0B700116117 /* FirebaseFirestore in Frameworks */,
 				184360602A82D0B700116117 /* FirebaseStorage in Frameworks */,
@@ -429,7 +427,6 @@
 				1843605B2A82D0B700116117 /* FirebaseFirestore */,
 				1843605D2A82D0B700116117 /* FirebaseFirestoreSwift */,
 				1843605F2A82D0B700116117 /* FirebaseStorage */,
-				18BE31A42B18A4CC00F6CB07 /* CountryPicker */,
 			);
 			productName = "Home-Remodel";
 			productReference = 18435FF32A82B73900116117 /* Home-Remodel.app */;
@@ -505,7 +502,6 @@
 			mainGroup = 18435FEA2A82B73900116117;
 			packageReferences = (
 				184360562A82D0B700116117 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				18BE31A32B18A4CB00F6CB07 /* XCRemoteSwiftPackageReference "CountryPicker" */,
 			);
 			productRefGroup = 18435FF42A82B73900116117 /* Products */;
 			projectDirPath = "";
@@ -945,14 +941,6 @@
 				minimumVersion = 10.0.0;
 			};
 		};
-		18BE31A32B18A4CB00F6CB07 /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/CountryPicker";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.3;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -980,11 +968,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 184360562A82D0B700116117 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
-		};
-		18BE31A42B18A4CC00F6CB07 /* CountryPicker */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 18BE31A32B18A4CB00F6CB07 /* XCRemoteSwiftPackageReference "CountryPicker" */;
-			productName = CountryPicker;
 		};
 /* End XCSwiftPackageProductDependency section */
 
