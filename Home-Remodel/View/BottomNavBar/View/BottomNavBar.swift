@@ -17,7 +17,7 @@ struct BottomNavBarView: View {
 //            BottomNavBarItem(image: Image("heart.fill"),)
             
             //Edit the code below to add navigation to the LiDAR view
-            BottomNavBarItem(image: Image("camera.viewfinder"), destination: {AnyView(CheckoutView())})
+            BottomNavBarItem(image: Image("camera.viewfinder"), destination: {AnyView(QuoteView())})
             
             BottomNavBarItem(image: Image("User"), destination: {AnyView(ProfileView())})
         }

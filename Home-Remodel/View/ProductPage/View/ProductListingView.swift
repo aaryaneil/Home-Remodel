@@ -128,8 +128,21 @@ struct TagLineView: View {
     }
 }
 
+struct RoomCaptureViewControllerRepresentable: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> RoomCaptureViewController {
+        return RoomCaptureViewController()
+    }
+
+    func updateUIViewController(_ uiViewController: RoomCaptureViewController, context: Context) {
+        // Update the view controller if necessary
+    }
+}
+
 struct SearchAndScanView: View {
+    
+    @State private var isScannerViewPresented = false
     @Binding var search: String
+    
     var body: some View {
         HStack {
             HStack {
@@ -141,13 +154,19 @@ struct SearchAndScanView: View {
             .background(Color.white)
             .cornerRadius(10.0)
             .padding(.trailing, 8)
+      
             
-            Button(action: {}) {
-                Image("Scan")
+            Button(action: {
+                isScannerViewPresented = true
+            }) {
+                Image("Scanning")
                     .padding()
                     .background(Color("Primary"))
                     .cornerRadius(10.0)
             }
+            .fullScreenCover(isPresented: $isScannerViewPresented, content: {
+                RoomCaptureViewControllerRepresentable()
+                        })
         }
         .padding(.horizontal)
     }

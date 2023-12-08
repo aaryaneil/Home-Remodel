@@ -50,9 +50,6 @@
 		1843604D2A82BAFE00116117 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843604A2A82BAFE00116117 /* User.swift */; };
 		184360502A82BC2B00116117 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1843604E2A82BC2B00116117 /* PlayfairDisplay-Regular.ttf */; };
 		184360512A82BC2B00116117 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1843604F2A82BC2B00116117 /* PlayfairDisplay-Bold.ttf */; };
-		184360532A82CE4400116117 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 184360522A82CE4400116117 /* GoogleService-Info.plist */; };
-		184360542A82CE4400116117 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 184360522A82CE4400116117 /* GoogleService-Info.plist */; };
-		184360552A82CE4400116117 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 184360522A82CE4400116117 /* GoogleService-Info.plist */; };
 		184360582A82D0B700116117 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 184360572A82D0B700116117 /* FirebaseAppCheck */; };
 		1843605A2A82D0B700116117 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 184360592A82D0B700116117 /* FirebaseAuth */; };
 		1843605C2A82D0B700116117 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1843605B2A82D0B700116117 /* FirebaseFirestore */; };
@@ -67,8 +64,11 @@
 		18EC50942A82D3A4008BDEC9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC50932A82D3A4008BDEC9 /* AuthViewModel.swift */; };
 		18EC50952A82D3A4008BDEC9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC50932A82D3A4008BDEC9 /* AuthViewModel.swift */; };
 		18EC50962A82D3A4008BDEC9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC50932A82D3A4008BDEC9 /* AuthViewModel.swift */; };
+		820126782B1AEE56005D4C7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 820126772B1AEE56005D4C7F /* GoogleService-Info.plist */; };
+		8201267A2B1AEEAC005D4C7F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820126792B1AEEAC005D4C7F /* Launch Screen.storyboard */; };
+		8201267C2B1AF243005D4C7F /* RoomCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8201267B2B1AF243005D4C7F /* RoomCaptureViewController.swift */; };
+		82DB50B52B1AFFBF005E408D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DB50B42B1AFFBF005E408D /* Main.storyboard */; };
 		EC0821552B197E4C0056CE85 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0821542B197E4C0056CE85 /* QuoteView.swift */; };
-		EC2817C62B1960E6003F16E7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2817C52B1960E5003F16E7 /* Launch Screen.storyboard */; };
 		EC2817D62B196860003F16E7 /* New Group in Resources */ = {isa = PBXBuildFile; fileRef = EC2817D52B196860003F16E7 /* New Group */; };
 		EC2817D82B196F3E003F16E7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2817D72B196F3D003F16E7 /* WelcomeView.swift */; };
 		EC2817DA2B196F88003F16E7 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2817D92B196F88003F16E7 /* RoundButton.swift */; };
@@ -117,15 +117,17 @@
 		1843604A2A82BAFE00116117 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1843604E2A82BC2B00116117 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		1843604F2A82BC2B00116117 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
-		184360522A82CE4400116117 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		187A80DA2B18D7FC00EA8E75 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		187A80DF2B18DA5400EA8E75 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		18AE0A1C2A83606E004DA0D2 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		18BE31B42B18B9C100F6CB07 /* BottomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavBar.swift; sourceTree = "<group>"; };
 		18EC50932A82D3A4008BDEC9 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		18EC50972A8358D4008BDEC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		820126772B1AEE56005D4C7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		820126792B1AEEAC005D4C7F /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8201267B2B1AF243005D4C7F /* RoomCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCaptureViewController.swift; sourceTree = "<group>"; };
+		82DB50B42B1AFFBF005E408D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EC0821542B197E4C0056CE85 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
-		EC2817C52B1960E5003F16E7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../../../../../Desktop/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		EC2817D52B196860003F16E7 /* New Group */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "New Group"; sourceTree = "<group>"; };
 		EC2817D72B196F3D003F16E7 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		EC2817D92B196F88003F16E7 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		18435FF52A82B73900116117 /* Home-Remodel */ = {
 			isa = PBXGroup;
 			children = (
+				820126772B1AEE56005D4C7F /* GoogleService-Info.plist */,
 				187A80D72B18CB6D00EA8E75 /* View */,
 				18EC50972A8358D4008BDEC9 /* Info.plist */,
 				1843602D2A82B9A600116117 /* App */,
@@ -201,7 +204,6 @@
 				184360262A82B87F00116117 /* Model */,
 				184360252A82B84F00116117 /* Fonts */,
 				18435FFA2A82B73B00116117 /* Assets.xcassets */,
-				184360522A82CE4400116117 /* GoogleService-Info.plist */,
 				18435FFF2A82B73B00116117 /* Persistence.swift */,
 				184360012A82B73B00116117 /* Home_Remodel.xcdatamodeld */,
 				18435FFC2A82B73B00116117 /* Preview Content */,
@@ -290,11 +292,12 @@
 		1843602C2A82B92800116117 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				82DB50B42B1AFFBF005E408D /* Main.storyboard */,
+				820126792B1AEEAC005D4C7F /* Launch Screen.storyboard */,
 				EC2817DD2B1972CC003F16E7 /* UIExtension.swift */,
 				EC2817D92B196F88003F16E7 /* RoundButton.swift */,
 				EC2817D72B196F3D003F16E7 /* WelcomeView.swift */,
 				EC2817D52B196860003F16E7 /* New Group */,
-				EC2817C52B1960E5003F16E7 /* Launch Screen.storyboard */,
 				184360462A82BAF700116117 /* ContentView.swift */,
 			);
 			path = Root;
@@ -393,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				EC0821542B197E4C0056CE85 /* QuoteView.swift */,
+				8201267B2B1AF243005D4C7F /* RoomCaptureViewController.swift */,
 			);
 			path = "Quote View";
 			sourceTree = "<group>";
@@ -513,11 +517,12 @@
 			files = (
 				184360512A82BC2B00116117 /* PlayfairDisplay-Bold.ttf in Resources */,
 				18435FFE2A82B73B00116117 /* Preview Assets.xcassets in Resources */,
-				184360532A82CE4400116117 /* GoogleService-Info.plist in Resources */,
 				EC2817D62B196860003F16E7 /* New Group in Resources */,
+				82DB50B52B1AFFBF005E408D /* Main.storyboard in Resources */,
 				18435FFB2A82B73B00116117 /* Assets.xcassets in Resources */,
 				184360502A82BC2B00116117 /* PlayfairDisplay-Regular.ttf in Resources */,
-				EC2817C62B1960E6003F16E7 /* Launch Screen.storyboard in Resources */,
+				820126782B1AEE56005D4C7F /* GoogleService-Info.plist in Resources */,
+				8201267A2B1AEEAC005D4C7F /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,7 +530,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184360542A82CE4400116117 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,7 +537,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184360552A82CE4400116117 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +549,7 @@
 			files = (
 				184360432A82BAEF00116117 /* ProfileView.swift in Sources */,
 				18BE31B52B18B9C100F6CB07 /* BottomNavBar.swift in Sources */,
+				8201267C2B1AF243005D4C7F /* RoomCaptureViewController.swift in Sources */,
 				181BC5672A85E0C3005703B0 /* ProductDetailView.swift in Sources */,
 				181BC56F2A85F862005703B0 /* CheckoutView.swift in Sources */,
 				1843603B2A82BAE300116117 /* LoginView.swift in Sources */,
@@ -753,7 +757,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Home-Remodel/Preview Content\"";
-				DEVELOPMENT_TEAM = 38RN2A868L;
+				DEVELOPMENT_TEAM = 3B42QHPMNN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Home-Remodel/Info.plist";
@@ -763,12 +767,13 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aaryaneilnimbalkar.Home-Remodel1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aaryaneilnimbalkar.Home-Remodel11";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -784,7 +789,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Home-Remodel/Preview Content\"";
-				DEVELOPMENT_TEAM = 38RN2A868L;
+				DEVELOPMENT_TEAM = 3B42QHPMNN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Home-Remodel/Info.plist";
@@ -794,12 +799,13 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aaryaneilnimbalkar.Home-Remodel1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aaryaneilnimbalkar.Home-Remodel11";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
