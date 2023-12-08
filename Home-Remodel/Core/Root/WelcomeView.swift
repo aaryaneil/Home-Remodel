@@ -55,7 +55,7 @@ struct WelcomeView: View {
             .ignoresSafeArea()
         }
         .onAppear {
-      
+       
         }
     }
 }
