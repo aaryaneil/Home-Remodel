@@ -165,7 +165,6 @@
 		181BC5722A86DEFE005703B0 /* ProductPage */ = {
 			isa = PBXGroup;
 			children = (
-				18BE31A72B18A9F800F6CB07 /* ViewModel */,
 				18BE31A62B18A9E900F6CB07 /* View */,
 			);
 			path = ProductPage;
@@ -372,13 +371,6 @@
 				181BC5662A85E0C3005703B0 /* ProductDetailView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		18BE31A72B18A9F800F6CB07 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		18BE31B22B18B98100F6CB07 /* BottomNavBar */ = {
