@@ -15,7 +15,7 @@ struct ProductFilterView: View {
     var body: some View {
         ScrollView {
             if products.count > 0 {
-                LazyVStack {
+                LazyVStack(spacing:40) {
                     ForEach(products, id: \.id) { product in
                         NavigationLink(
                             destination: ProductDetailsView(product: product),
@@ -28,6 +28,7 @@ struct ProductFilterView: View {
                             .padding(.bottom)
                     }
                 }
+                .padding()
             } else {
                 Text("Temporarily no products in this category")
                     .padding()

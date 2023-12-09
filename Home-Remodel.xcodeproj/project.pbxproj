@@ -13,6 +13,8 @@
 		188321542B23E4EC00838860 /* RoomScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188321532B23E4EC00838860 /* RoomScanView.swift */; };
 		188321562B23E54F00838860 /* RoomCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188321552B23E54F00838860 /* RoomCaptureViewController.swift */; };
 		188321582B23E57300838860 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188321572B23E57300838860 /* QuoteView.swift */; };
+		1883215B2B23FF3200838860 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1883215A2B23FF3200838860 /* Launch Screen.storyboard */; };
+		1883215D2B23FF3A00838860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1883215C2B23FF3A00838860 /* Main.storyboard */; };
 		18B4C07D2B22CA1D00FA003C /* ShoppingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4C07C2B22CA1D00FA003C /* ShoppingAppApp.swift */; };
 		18B4C0812B22CA1F00FA003C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B4C0802B22CA1F00FA003C /* Assets.xcassets */; };
 		18B4C0842B22CA1F00FA003C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B4C0832B22CA1F00FA003C /* Preview Assets.xcassets */; };
@@ -96,6 +98,8 @@
 		188321532B23E4EC00838860 /* RoomScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomScanView.swift; sourceTree = "<group>"; };
 		188321552B23E54F00838860 /* RoomCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCaptureViewController.swift; sourceTree = "<group>"; };
 		188321572B23E57300838860 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		1883215A2B23FF3200838860 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1883215C2B23FF3A00838860 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		18B4C0792B22CA1D00FA003C /* Home-Remodel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home-Remodel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B4C07C2B22CA1D00FA003C /* ShoppingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppApp.swift; sourceTree = "<group>"; };
 		18B4C0802B22CA1F00FA003C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -183,6 +187,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		188321592B23FF2300838860 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				1883215A2B23FF3200838860 /* Launch Screen.storyboard */,
+				1883215C2B23FF3A00838860 /* Main.storyboard */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
 		18B4C0702B22CA1D00FA003C = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +219,7 @@
 		18B4C07B2B22CA1D00FA003C /* ShoppingApp */ = {
 			isa = PBXGroup;
 			children = (
+				188321592B23FF2300838860 /* Extras */,
 				18B4C1102B22D09500FA003C /* Extensions */,
 				18B4C0E72B22CB4500FA003C /* ViewModel */,
 				18B4C0E42B22CB0200FA003C /* Views */,
@@ -453,7 +467,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B4C0842B22CA1F00FA003C /* Preview Assets.xcassets in Resources */,
+				1883215D2B23FF3A00838860 /* Main.storyboard in Resources */,
 				18B4C0812B22CA1F00FA003C /* Assets.xcassets in Resources */,
+				1883215B2B23FF3200838860 /* Launch Screen.storyboard in Resources */,
 				18B4C1152B22D7BD00FA003C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
