@@ -40,17 +40,6 @@ The DeepLIDAR Home Remodeling Platform is a project that explores the applicatio
 
 4. Run the application on a simulator or a physical device.
 
-## Contributing
-
-We welcome contributions to enhance the functionality and features of the DeepLIDAR Home Remodeling Platform. If you would like to contribute, please follow the [Contribution Guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE.md).
-
-## Acknowledgments
-
-We would like to express our gratitude to the open-source community and the contributors who have helped shape the DeepLIDAR Home Remodeling Platform.
 
 
 ---
