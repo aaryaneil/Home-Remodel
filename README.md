@@ -27,7 +27,7 @@ The DeepLIDAR Home Remodeling Platform is a project that explores the applicatio
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/DeepLIDAR-Home-Remodeling.git
+   git clone https://github.com/aaryaneil/DeepLIDAR-Home-Remodeling.git
    cd DeepLIDAR-Home-Remodeling
    ```
 
