@@ -43,12 +43,16 @@ struct ProfileView: View {
                                         Text("Orders")
                                         
                                     })
+                                    NavigationLink(destination: WatchListView(), label: {
+                                        Text("Favorites")
+                                        
+                                    })
                                 }
                             }
                             .listStyle(.grouped)
                             .scrollDisabled(true)
                             .scrollContentBackground(.hidden)
-                            .frame(height:100)
+                            .frame(height:175)
                             
                             List{
                                 Section(header: Text("App")){
@@ -218,18 +222,18 @@ struct ChangePasswordView: View{
                     if newPassword == newPassword2{
                         user.changePassword(email: user.user!.userEmail, currentPassword: password, newPassword: newPassword){ error in
                             if error != nil {
-                                user.updateAlert(title: "error", message: error?.localizedDescription ?? "Something went wrong")
+                                user.updateAlert(title: "Error", message: error?.localizedDescription ?? "Something went wrong")
                             } else {
-                                user.updateAlert(title: "Sukces!", message: "Password has been changed")
+                                user.updateAlert(title: "Success", message: "Password has been changed")
                                 
                             }
                         }
                         
                     } else {
-                        user.updateAlert(title: "error", message: "The passwords are different.")
+                        user.updateAlert(title: "Error", message: "The passwords are different.")
                     }
                 } else {
-                    user.updateAlert(title: "error", message: "Fields cannot be empty")
+                    user.updateAlert(title: "Error", message: "Fields cannot be empty")
 
                 }
                 

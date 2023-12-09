@@ -9,78 +9,78 @@ import SwiftUI
 
 struct ProductCard: View {
     
-    @EnvironmentObject var productVM: ProductViewModel
     var product: Product
+    @EnvironmentObject var productVM: ProductViewModel
+    @EnvironmentObject var userVM: UserViewModel
+    @State private var showingReviewView = false
+    
+    // Rating and reviews
+    @State private var rate = [Int]()
+    @State private var review = [String]()
+    @State private var ratedByUID = [String]()
+    @State private var ratedBy = [String]()
+    @State private var ratesTotal: Int = 0
+    @State private var ratesCount: Int = 0
+    @State private var ratesAverage: Double = 0.0
+    @State private var currentReviewIndex: Int = 0
     
     var body: some View {
-        ZStack {
-            Rectangle()
-                .fill(Color(#colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.937254902, alpha: 1)))
-                .frame(width: 195, height: 320, alignment: .center)
-                .cornerRadius(15)
-                .overlay(
-                    VStack(alignment: .center) {
-                        ProductCardImage(imageURL: product.imageURL).padding(.top)
-                        
-                        Text(product.name.uppercased())
+        VStack {
+            ProductCardImage(imageURL: product.imageURL)
+                .frame(width: 200, height: 200)
+                .cornerRadius(20.0)
+            
+            Text(product.name.uppercased())
+                .font(.title3)
+                .fontWeight(.bold)
+            
+            HStack(spacing: 2) {
+                ForEach(0 ..< Int(self.ratesAverage), id: \.self) { _ in
+                    Image(systemName: "star.fill")
+                        .font(.callout)
+                }
+                
+                if (self.ratesAverage != floor(self.ratesAverage)) {
+                    Image(systemName: "star.leadinghalf.fill")
+                        .font(.callout)
+                }
+                
+                ForEach(0 ..< Int(Double(5) - self.ratesAverage), id: \.self) { _ in
+                    Image(systemName: "star")
+                        .font(.callout)
+                }
+                
+                Spacer()
+                
+                if product.isOnSale {
+                    VStack {
+                        Text("\(product.price)")
+                            .bold()
                             .foregroundColor(.black)
-                            .font(.subheadline)
-                            .multilineTextAlignment(.center)
-                            .lineLimit(2)
-                            .fixedSize(horizontal: false, vertical: true)
+                            .font(.footnote)
+                            .strikethrough()
+                            .foregroundColor(.black)
+                            .opacity(0.75)
+                            .frame(alignment: .trailing)
                         
-                        Spacer()
-                        
-                        if product.isOnSale {
-                            VStack {
-                                Text("\(product.price)")
-                                    .bold()
-                                    .foregroundColor(.black)
-                                    .padding([.leading, .trailing])
-                                    .font(.footnote)
-                                    .strikethrough()
-                                    .foregroundColor(.black)
-                                    .opacity(0.75)
-                                    .frame(alignment: .trailing)
-                                
-                                Text("$\(product.onSalePrice)")
-                                    .font(.body)
-                                    .foregroundColor(.black)
-                            }
-                            .frame(alignment: .center)
-                        } else {
-                            Text("$\(product.price)")
-                                .bold()
-                                .foregroundColor(.black)
-                        }
-                        
-                        Spacer(minLength: 10)
-                        
-                        ZStack(alignment: .center) {
-                            Button {
-                                productVM.addProductToCart(productID: product.id)
-                            } label: {
-                                HStack() {
-                                    Image(systemName: "cart.badge.plus")
-                                        .bold()
-                                        .font(.callout)
-                                    Text("To shopping cart")
-                                        .bold()
-                                        .font(.footnote)
-                                }
-                                .padding(8)
-                                .foregroundColor(.white)
-                                .background(Color("Primary"))
-                                .cornerRadius(45)
-                            }
-                        }
-                        .padding(.bottom)
+                        Text("$\(product.onSalePrice)")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .foregroundColor(.black)
                     }
-                )
-                .cornerRadius(12)
-                .shadow(color: .gray, radius: 4, x: 0.0, y: 0.0)
-                .frame(width: 200, height: 320, alignment: .center)
+                    .frame(alignment: .center)
+                } else {
+                    Text("$\(product.price)")
+                        .bold()
+                        .foregroundColor(.black)
+                }
+            }
         }
+        .frame(width: 200)
+        .padding()
+        .background(Color.white)
+        .cornerRadius(20.0)
+        .shadow(color: .gray, radius: 4, x: 0.0, y: 0.0)
         .padding([.leading, .trailing])
     }
 }
@@ -91,25 +91,16 @@ struct ProductCardImage: View {
     
     var body: some View {
         ZStack {
-            Rectangle()
-                .fill(Color.white)
-                .frame(width: 160, height: 160, alignment: .center)
-                .cornerRadius(15)
-                .overlay(
-                    ZStack {
                         ProgressView()
                         if imageLoader.image != nil {
                             HStack {
-                                Spacer()
                                 Image(uiImage: imageLoader.image!)
                                     .resizable()
+                                    .cornerRadius(20)
                                     .compositingGroup()
                                     .aspectRatio(contentMode: .fit)
-                                Spacer()
                             }
                         }
-                    }.padding()
-                )
         }
         .cornerRadius(12)
         .shadow(color: .gray, radius: 4, x: 0.0, y: 0.0)

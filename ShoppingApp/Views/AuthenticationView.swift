@@ -189,7 +189,9 @@ struct SignUpView: View {
                         }.padding()
                     }
                     
-                    Button("Create an account") {
+                    
+                    
+                    Button(action: {
                         if username.isEmpty || email.isEmpty || password.isEmpty || passwordConfirmation.isEmpty {
                             user.updateAlert(title: "Error", message: "Fields cannot be empty")
                             return
@@ -201,14 +203,17 @@ struct SignUpView: View {
                         }
 
                         user.signUp(email: email, password: password, username: username)
+                    }) {
+                        Text("Create an account")
+                            .foregroundColor(.white)
+                            .padding()
                     }
-                    .foregroundColor(.white)
                     .background(Color("Primary"))
                     .cornerRadius(45)
-                    .padding()
                     .alert(isPresented: $user.showingAlert) {
                         Alert(title: Text(user.alertTitle), message: Text(user.alertMessage), dismissButton: .default(Text("OK")))
                     }
+
 
                 }
                 .padding()

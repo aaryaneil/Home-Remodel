@@ -10,63 +10,47 @@ import SwiftUI
 struct MainView: View {
     
     @EnvironmentObject var productVM: ProductViewModel
-    @EnvironmentObject var userVM: UserViewModel
-    
-    
+        @EnvironmentObject var userVM: UserViewModel
+        @State private var search: String = ""
 
-    var body: some View {
-        NavigationView{
-            VStack{
-                ScrollView(.vertical){
-                    VStack(alignment: .leading){
-                        if(productVM.promotedProducts != nil){
-                            ProductCarousel(products: productVM.promotedProducts ?? (productVM.products)!)
-                        }
-                    }
-                    VStack(alignment: .leading){
-                        Text("Deals")
-                            .font(.system(size:28))
-                            .multilineTextAlignment(.leading)
-                            .padding(.leading)
-                        if(productVM.onSaleProducts != nil){
-                            ProductCardList(products: productVM.onSaleProducts!)
-                        }
-                    }
-                    Spacer(minLength: 40)
-                }
+        var body: some View {
+            NavigationView {
+                ProductListingView()
+                    .environmentObject(productVM)
+                    .navigationBarTitleDisplayMode(.inline)
             }
-            .navigationBarTitle("Shopping App")
-            .navigationBarTitleDisplayMode(.inline)
+            .onAppear {
+                productVM.getPromotedProducts()
+                productVM.getOnSaleProducts()
+                productVM.getProducts()
+                productVM.getUserWatchList()
+                productVM.getUserCart()
+            }
+            .alert(isPresented: $userVM.showingAlert) {
+                Alert(
+                    title: Text(userVM.alertTitle),
+                    message: Text(userVM.alertMessage),
+                    dismissButton: .default(Text("OK"))
+                )
+            }
+            .alert(isPresented: $productVM.showingAlert) {
+                Alert(
+                    title: Text(productVM.alertTitle),
+                    message: Text(productVM.alertMessage),
+                    dismissButton: .default(Text("OK"))
+                )
+            }
         }
-
-        .onAppear{
-            productVM.getPromotedProducts()
-            productVM.getOnSaleProducts()
-            productVM.getProducts()
-            productVM.getUserWatchList()
-            productVM.getUserCart()
-        }
-        
-        .alert(isPresented: $userVM.showingAlert){
-            Alert(
-                title: Text(userVM.alertTitle),
-                message: Text(userVM.alertMessage),
-                dismissButton: .default(Text("OK"))
-            )
-        }
-        
-        .alert(isPresented: $productVM.showingAlert){
-            Alert(
-                title: Text(productVM.alertTitle),
-                message: Text(productVM.alertMessage),
-                dismissButton: .default(Text("OK"))
-            )
-        }
-    }
 }
+    
+
+
+
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+        .environmentObject(ProductViewModel())
+        .environmentObject(UserViewModel())
     }
 }

@@ -29,13 +29,11 @@ extension Product{
     }
     
     static var sampleProducts: [Product] {
-        return [Product(id: "1", name: "macbook pro 15 16/512 i7" , img: "https://www.tradeinn.com/f/13745/137457920/apple-macbook-pro-touch-bar-16-i9-2.3-16gb-1tb-ssd-laptop.jpg", price: 5500, amount: 3, description: "test", category: "laptopy", isOnSale: true, onSalePrice: 5000, details: ["es" , "esy"], images: ["https://www.tradeinn.com/f/13745/137457920/apple-macbook-pro-touch-bar-16-i9-2.3-16gb-1tb-ssd-laptop.jpg"]),
-        Product(id: "3", name: "macbook pro 13 16/512", img: "https://www.tradeinn.com/f/13745/137457920/apple-macbook-pro-touch-bar-16-i9-2.3-16gb-1tb-ssd-laptop.jpg", price: 7500, amount: 3, description: "test", category: "laptopy", isOnSale: true, onSalePrice: 5000, details: ["es" , "esy"], images: ["https://www.tradeinn.com/f/13745/137457920/apple-macbook-pro-touch-bar-16-i9-2.3-16gb-1tb-ssd-laptop.jpg"]),
-        Product(id: "3", name: "macbook pro 13 16/512 m1", img: "https://www.tradeinn.com/f/13745/137457920/apple-macbook-pro-touch-bar-16-i9-2.3-16gb-1tb-ssd-laptop.jpg m2", price: 15500, amount: 3, description: "test", category: "laptopy", isOnSale: true, onSalePrice: 5000, details: ["es" , "esy"], images: ["https://www.tradeinn.com/f/13745/137457920/apple-macbook-pro-touch-bar-16-i9-2.3-16gb-1tb-ssd-laptop.jpg m2"])]
+        return [Product(id: "zhTtJZBmWaBrLwawkGqL", name: "MALM" , img: "https://www.ikea.com/us/en/images/products/tarva-bed-frame-pine-luroey__0637611_pe698421_s5.jpg", price: 5500, amount: 3, description: "test", category: "Bedroom", isOnSale: true, onSalePrice: 5000, details: ["Bed frame" , "Queen"], images: ["https://www.ikea.com/us/en/images/products/tarva-bed-frame-pine-luroey__0321952_ph121261_s5.jpg","https://www.ikea.com/us/en/images/products/tarva-bed-frame-pine-luroey__1273465_pe930077_s5.jpg","https://www.ikea.com/us/en/images/products/tarva-bed-frame-pine-luroey__0485205_ph121284_s5.jpg"])]
     }
     
     static var sampleProduct: Product {
-        return Product(id: "1", name: "macbook pro 15 16/512 i7" , img: "https://www.tradeinn.com/f/13745/137457920/apple-macbook-pro-touch-bar-16-i9-2.3-16gb-1tb-ssd-laptop.jpg", price: 5500, amount: 3, description: "test", category: "laptopy", isOnSale: true, onSalePrice: 5000, details: ["es" , "esy"], images: ["https://www.tradeinn.com/f/13745/137457920/apple-macbook-pro-touch-bar-16-i9-2.3-16gb-1tb-ssd-laptop.jpg"])
+        return Product(id: "zhTtJZBmWaBrLwawkGqL", name: "MALM" , img: "https://www.ikea.com/us/en/images/products/tarva-bed-frame-pine-luroey__0637611_pe698421_s5.jpg", price: 5500, amount: 3, description: "test", category: "Bedroom", isOnSale: true, onSalePrice: 5000, details: ["Bed frame" , "Queen"], images: ["https://www.ikea.com/us/en/images/products/tarva-bed-frame-pine-luroey__0321952_ph121261_s5.jpg","https://www.ikea.com/us/en/images/products/tarva-bed-frame-pine-luroey__1273465_pe930077_s5.jpg","https://www.ikea.com/us/en/images/products/tarva-bed-frame-pine-luroey__0485205_ph121284_s5.jpg"])
     }
 
 

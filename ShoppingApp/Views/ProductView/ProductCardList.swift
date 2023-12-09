@@ -16,13 +16,14 @@ struct ProductCardList: View {
     var body: some View {
         LazyVGrid(columns: columns, spacing: 16) {
             ForEach(products) { product in
-                VStack {
+                VStack(spacing: 16) {
                     NavigationLink(destination: ProductDetailsView(product: product)) {
                         ProductCard(product: product)
                             .padding(16)
                     }
                     .buttonStyle(PlainButtonStyle())
                 }
+                .padding(.leading, 70)
             }
         }
     }

@@ -300,7 +300,8 @@ struct addNewProductView: View{
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchCell(product: Product.sampleProduct)
+        //SearchCell(product: Product.sampleProduct)
+        SearchView()
             .environmentObject(ProductViewModel())
     }
 }

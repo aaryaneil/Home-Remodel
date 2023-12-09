@@ -42,8 +42,8 @@ struct ContentView: View {
                         Text("Cart")
                     }.tag(2)
                     WatchListView().tabItem {
-                        Image(systemName: "eye.fill")
-                        Text("Watchlist")
+                        Image(systemName: "camera.viewfinder")
+                        Text("Room Scan")
                     }.tag(3)
                     ProfileView().tabItem {
                         Image(systemName: "person.fill")

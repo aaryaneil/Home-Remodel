@@ -75,7 +75,7 @@ class UserViewModel: ObservableObject {
                     self.syncUser()
                 }
             } else {
-                self.updateAlert(title: "Error", message: error?.localizedDescription ?? "Coś poszło nie tak")
+                self.updateAlert(title: "Error", message: error?.localizedDescription ?? "Something went wrong")
             }
         }
     }
@@ -83,9 +83,9 @@ class UserViewModel: ObservableObject {
     func resetPassword(email: String) {
         auth.sendPasswordReset(withEmail: email) { error in
             if error == nil {
-                self.updateAlert(title: "Success", message: "Link zmieniający hasło został wyslany na adres e-mail .")
+                self.updateAlert(title: "Success", message: "A link to change your password has been sent to your e-mail address.")
             } else {
-                self.updateAlert(title: "Error", message: error?.localizedDescription ?? "Coś poszło nie tak")
+                self.updateAlert(title: "Error", message: error?.localizedDescription ?? "Something went wrong")
             }
         }
     }

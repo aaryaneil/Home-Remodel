@@ -86,6 +86,7 @@ struct ProductCarouselImage: View {
                     }
                 )
         }
+        .padding(.leading)
         .cornerRadius(12)
         .onAppear {
             imageLoader.loadImage(with: imageURL)
